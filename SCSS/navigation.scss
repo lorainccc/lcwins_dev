@@ -49,10 +49,28 @@
   clear: both;
   display: block;
   float: left;
-  width: 960px;
+  width: 100%;
   margin: 15px 0 0 0;
 		 @include radius(20px);
 	background-image: linear-gradient($winslightblue, $lcccdarkblue);
 	padding: 5px 5px 5px 15px;
 }
 .main-navigation ul a {color:$white;}
+
+@media screen and (max-width: 39.9375em){
+	.menu > li > a {
+    display: block;
+    padding: 0.7rem 1rem;
+    line-height: 1;
+    color: #fff;
+		}
+		.top-bar, .top-bar ul {
+    background-color: #333333;
+		}
+	.menu > li {
+    border-bottom: 1px solid #888;
+	}
+	.menu > li:last-child{
+			border-bottom: none;
+	}
+}

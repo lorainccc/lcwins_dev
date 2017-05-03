@@ -11,9 +11,9 @@
 	</div><!-- #content -->
 </div><!-- #page -->
 </div>
-</div><!-- closes the row div -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+
+<footer id="colophon" class="small-12 columns site-footer" role="contentinfo">
 <div class="row">	
 		<div class="site-info">
 			<p class="footertagline"> Lorain County Workforce Innovation Network </p>
@@ -21,6 +21,7 @@
 		</div><!-- .site-info -->
 </div>
 	</footer><!-- #colophon -->
+</div><!-- closes the row div -->
 <?php wp_footer(); ?>
 </body>
 </html>

@@ -18,27 +18,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="hide-for-large-up">
-		<div class="contain-to-grid sticky">
-				<div class="fixed">
-						<nav class="top-bar" data-topbar role="navigation">
-					<ul class="title-area">
-							<li class="name">
-					
-							</li>
-								<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-							<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-					</ul>
-					<section class="top-bar-section">
-							<!-- Right Nav Section -->
-							<ul class="right">
-	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-							</ul>
-					</section>
-			</nav>
-			 </div>	
+		<div data-sticky-container class="show-for-small-only">
+		<div class="title-bar" data-responsive-toggle="lcwins-main-menu" data-hide-for="medium" data-sticky data-options="marginTop:0;" style="width:100%">
+  <button class="menu-icon" type="button" data-toggle="lcwins-main-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div id="lcwins-main-menu" class="top-bar" >
+			  <nav role="navigation" aria-label="<?php _e( 'Mobile Main Menu', 'lorainccc' );?>">
+	   <ul id="responsive-menu"  class="vertical menu" data-drilldown data-parent-link="true">
+					<?php 	wp_nav_menu(array(
+													'container' => false,
+													'menu' => __( 'Drill Menu', 'textdomain' ),
+													'menu_class' => 'vertical menu',
+													'theme_location' => 'primary',
+													'menu_id' => 'mobile-primary-menu',
+														//Recommend setting this to false, but if you need a fallback...
+														'fallback_cb' => 'lc_drill_menu_fallback',
+													'walker' => new lc_drill_menu_walker(),								
+				));
+     ?>
+    </ul>
+	</nav>
+</div>
 		</div>
-	</div>
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns  mainbackground">
 	<div id="page" class="hfeed site">

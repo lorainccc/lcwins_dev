@@ -17,5 +17,14 @@
 .site-footer{
 	background: $footerbackground;
 }
-.footertagline{color: $white; float: left;}
-.footerlccc{color: $white; float: right;}
+.footertagline{
+				color: $white; float: left;     
+				font-size: 1rem;
+    padding: 1rem;
+}
+.footerlccc{
+		color: $white; 
+  float: right;	
+		font-size: 1rem;
+  padding: 1rem;
+}
