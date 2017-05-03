@@ -1,0 +1,30 @@
+/*! Section 3 - Header */
+$mobilelogobreakingpoint: 640px;
+$mobilelogobreakingpoint2: 778px;
+#jvsheaderlogo{float: left; display: block;margin: 30px 20px 5px 0;
+@media screen and (max-width: $mobilelogobreakingpoint){
+	margin: 0;
+}
+}
+#lcccheaderlogo{float: left; display: block;  margin: 40px 20px 0 20px;
+@media screen and (max-width: $mobilelogobreakingpoint2){
+	  margin: 40px 1px 0;
+}
+	@media screen and (max-width: $mobilelogobreakingpoint){
+	margin: 0;
+}
+}
+.brandinglogos{
+@media screen and (max-width: $mobilelogobreakingpoint2){
+	padding: 0;
+}
+	@media screen and (max-width: $mobilelogobreakingpoint){
+	padding: 0;
+}
+}
+
+#lcwins-logo{
+	@media screen and (max-width: $mobilelogobreakingpoint){
+	 margin-top: 40px;
+}
+}

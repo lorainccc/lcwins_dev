@@ -1,0 +1,42 @@
+/*!  Section 2 - Body Styles */
+$mobilebodybreakingpoint: 640px;
+body{
+	font-family: 'Droid Sans', sans-serif;
+}
+.columns img{
+	margin: 5px 0;
+}
+a.large.button.classschedule
+{
+	background-image: linear-gradient($lcccmedblue, $lcccdarkblue);
+	height:100px;
+	width:80%;
+	color: $buttonlinkwhite;
+}
+a.large.button.univpartnership
+{
+	background-image: linear-gradient($lcccmedblue, $lcccdarkblue);
+	height:100px;
+	width:80%;
+	color: $buttonlinkwhite;
+}
+.mainbackground
+{
+	background-color: $bodybackground;
+	margin-top: 35px;
+	 @include radius(20px, 20px, 0px, 0px);
+	border: solid 2px $lightgray;
+	@media screen and (max-width: $mobilebodybreakingpoint){
+	 border: 0;
+  border-radius: 0;
+  margin: 0;
+	}
+}
+.sidebarcontainer{margin-top: 15px;}
+.contentrow{margin-top: 15px;}
+
+#yoastbreadcrumbs{ 
+  margin: 0 auto 10px -5;
+  padding: 3px 0;
+float: left;
+}
